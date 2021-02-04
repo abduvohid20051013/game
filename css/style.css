@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+.battle {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: darkred;
+}
+.oyin {
+    height: 100vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+.ballar { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    height: 20vh;
+}
+.computer-score {
+    border-left: 5px solid darkgrey;
+    padding: 10px;
+}
+.player-score {
+    border-right: 5px solid darkgrey;
+    padding: 10px;
+}
+.p-score-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: blueviolet;
+}
+.c-score-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: blueviolet;
+}
+.p-score {
+    color: blue;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+.c-score {
+    color: blue;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+.bellashuv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.oyinchi {
+    margin-bottom: 50px;
+    margin-top: 70px;
+    font-size: 50px;
+    text-align: center;
+
+}
+.qollar {
+    max-width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hand-computer {
+    transform: rotateY(180deg);
+}
+img {
+    padding: 20px; 
+}
+span {
+    padding: 20px;
+    border: 5px solid black;
+    width: 180px;
+    height: 180px;
+}
+.tanlov {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tanlov > button {
+    margin-top: 50px;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: orange;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+@media(max-width: 653px) {
+    .tanlov > button {
+        width: 100px;
+    }
+}
+@media(max-width: 478px) {
+    .battle {
+        display: none;
+    }
+    .player-score {
+        text-align: center;
+        max-width: 200px;
+        border: none;
+    } 
+    .computer-score {
+        text-align: center;
+        max-width: 200px;
+        border: none;
+    } 
+    .player-score > p {
+        text-align: center;
+    }
+}
+@media(max-width: 410px) {
+    .ballar {
+        min-width: 100px;
+        height: ;
+    }
+}
+@media(max-width: 365px) {
+    span {
+        width: 150px;
+        height: 150px;
+    }
+    img {
+        width: 120px;
+    }
+    .oyinchi {
+        font-size: 35px;
+    }
+    .tanlov > button {
+        width: 80px;
+    }
+}
